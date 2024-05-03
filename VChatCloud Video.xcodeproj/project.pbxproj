@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B96BEBD12BE35AA200E08222 /* VChatCloudSwiftSDK in Frameworks */ = {isa = PBXBuildFile; productRef = B96BEBD02BE35AA200E08222 /* VChatCloudSwiftSDK */; };
+		B9C562CA2BD8AB30001321DC /* VChatCloud_iOSVideoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562C92BD8AB30001321DC /* VChatCloud_iOSVideoApp.swift */; };
+		B9C562D12BD8AB31001321DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C562D02BD8AB31001321DC /* Preview Assets.xcassets */; };
+		B9C5630B2BD8AB72001321DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562D72BD8AB72001321DC /* ContentView.swift */; };
+		B9C5630C2BD8AB72001321DC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562DA2BD8AB72001321DC /* LoadingView.swift */; };
+		B9C5630D2BD8AB72001321DC /* JoinUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562DC2BD8AB72001321DC /* JoinUserView.swift */; };
+		B9C5630F2BD8AB72001321DC /* ChatOpenGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562DE2BD8AB72001321DC /* ChatOpenGraphView.swift */; };
+		B9C563102BD8AB72001321DC /* ChatBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562DF2BD8AB72001321DC /* ChatBodyView.swift */; };
+		B9C563112BD8AB72001321DC /* LeaveUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562E02BD8AB72001321DC /* LeaveUserView.swift */; };
+		B9C563122BD8AB72001321DC /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562E12BD8AB72001321DC /* UserListView.swift */; };
+		B9C563132BD8AB72001321DC /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562E22BD8AB72001321DC /* TextFieldView.swift */; };
+		B9C563142BD8AB72001321DC /* ChatVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562E32BD8AB72001321DC /* ChatVideoView.swift */; };
+		B9C563152BD8AB72001321DC /* ChatFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562E42BD8AB72001321DC /* ChatFileView.swift */; };
+		B9C563162BD8AB72001321DC /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562E52BD8AB72001321DC /* NoticeView.swift */; };
+		B9C563172BD8AB72001321DC /* FileDrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562E62BD8AB72001321DC /* FileDrawerView.swift */; };
+		B9C563182BD8AB72001321DC /* EmojiFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562E72BD8AB72001321DC /* EmojiFieldView.swift */; };
+		B9C563192BD8AB72001321DC /* ChatHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562E82BD8AB72001321DC /* ChatHeaderView.swift */; };
+		B9C5631A2BD8AB72001321DC /* ChatBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562E92BD8AB72001321DC /* ChatBaseView.swift */; };
+		B9C5631B2BD8AB72001321DC /* HelpDrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562EA2BD8AB72001321DC /* HelpDrawerView.swift */; };
+		B9C5631C2BD8AB72001321DC /* LanguageToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562EB2BD8AB72001321DC /* LanguageToggleView.swift */; };
+		B9C5631D2BD8AB72001321DC /* ChatTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562EC2BD8AB72001321DC /* ChatTextView.swift */; };
+		B9C5631E2BD8AB72001321DC /* ChatImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562ED2BD8AB72001321DC /* ChatImageView.swift */; };
+		B9C5631F2BD8AB72001321DC /* ChatEmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562EE2BD8AB72001321DC /* ChatEmojiView.swift */; };
+		B9C563202BD8AB72001321DC /* ChattingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562EF2BD8AB72001321DC /* ChattingView.swift */; };
+		B9C563212BD8AB72001321DC /* TitleBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562F02BD8AB72001321DC /* TitleBarView.swift */; };
+		B9C563222BD8AB72001321DC /* MyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562F22BD8AB72001321DC /* MyScrollView.swift */; };
+		B9C563232BD8AB72001321DC /* PreviewVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562F32BD8AB72001321DC /* PreviewVideoView.swift */; };
+		B9C563242BD8AB72001321DC /* PreviewImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562F42BD8AB72001321DC /* PreviewImageView.swift */; };
+		B9C563252BD8AB72001321DC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562F62BD8AB72001321DC /* ProfileView.swift */; };
+		B9C563262BD8AB72001321DC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562F72BD8AB72001321DC /* LoginView.swift */; };
+		B9C563272BD8AB72001321DC /* TermView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562F82BD8AB72001321DC /* TermView.swift */; };
+		B9C563292BD8AB72001321DC /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562FB2BD8AB72001321DC /* CustomButtonStyle.swift */; };
+		B9C5632A2BD8AB72001321DC /* ErrorPopupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562FD2BD8AB72001321DC /* ErrorPopupModel.swift */; };
+		B9C5632B2BD8AB72001321DC /* ChatResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C562FE2BD8AB72001321DC /* ChatResultModel.swift */; };
+		B9C5632C2BD8AB72001321DC /* MyChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C563022BD8AB72001321DC /* MyChannel.swift */; };
+		B9C5632D2BD8AB72001321DC /* MockExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C563032BD8AB72001321DC /* MockExtension.swift */; };
+		B9C5632E2BD8AB72001321DC /* AlbumPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C563042BD8AB72001321DC /* AlbumPicker.swift */; };
+		B9C5632F2BD8AB72001321DC /* UtilExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C563052BD8AB72001321DC /* UtilExtensions.swift */; };
+		B9C563302BD8AB72001321DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C563062BD8AB72001321DC /* Assets.xcassets */; };
+		B9C563322BD8AB72001321DC /* ErrorPopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C563092BD8AB72001321DC /* ErrorPopupViewModel.swift */; };
+		B9C563332BD8AB72001321DC /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C5630A2BD8AB72001321DC /* RouterViewModel.swift */; };
+		B9C563392BD8ACAE001321DC /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = B9C563382BD8ACAE001321DC /* CachedAsyncImage */; };
+		B9C5633C2BD8ACC9001321DC /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = B9C5633B2BD8ACC9001321DC /* AlertToast */; };
+		B9C563482BD8B24F001321DC /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = B9C563472BD8B24F001321DC /* YouTubePlayerKit */; };
+		B9C563512BD8DDB7001321DC /* ChatWhisperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C563502BD8DDB7001321DC /* ChatWhisperView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B9C562C62BD8AB30001321DC /* VChatCloud Video.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VChatCloud Video.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9C562C92BD8AB30001321DC /* VChatCloud_iOSVideoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VChatCloud_iOSVideoApp.swift; sourceTree = "<group>"; };
+		B9C562D02BD8AB31001321DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B9C562D72BD8AB72001321DC /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B9C562DA2BD8AB72001321DC /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		B9C562DC2BD8AB72001321DC /* JoinUserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinUserView.swift; sourceTree = "<group>"; };
+		B9C562DE2BD8AB72001321DC /* ChatOpenGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatOpenGraphView.swift; sourceTree = "<group>"; };
+		B9C562DF2BD8AB72001321DC /* ChatBodyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBodyView.swift; sourceTree = "<group>"; };
+		B9C562E02BD8AB72001321DC /* LeaveUserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaveUserView.swift; sourceTree = "<group>"; };
+		B9C562E12BD8AB72001321DC /* UserListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		B9C562E22BD8AB72001321DC /* TextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		B9C562E32BD8AB72001321DC /* ChatVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVideoView.swift; sourceTree = "<group>"; };
+		B9C562E42BD8AB72001321DC /* ChatFileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatFileView.swift; sourceTree = "<group>"; };
+		B9C562E52BD8AB72001321DC /* NoticeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
+		B9C562E62BD8AB72001321DC /* FileDrawerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDrawerView.swift; sourceTree = "<group>"; };
+		B9C562E72BD8AB72001321DC /* EmojiFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiFieldView.swift; sourceTree = "<group>"; };
+		B9C562E82BD8AB72001321DC /* ChatHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatHeaderView.swift; sourceTree = "<group>"; };
+		B9C562E92BD8AB72001321DC /* ChatBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBaseView.swift; sourceTree = "<group>"; };
+		B9C562EA2BD8AB72001321DC /* HelpDrawerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpDrawerView.swift; sourceTree = "<group>"; };
+		B9C562EB2BD8AB72001321DC /* LanguageToggleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageToggleView.swift; sourceTree = "<group>"; };
+		B9C562EC2BD8AB72001321DC /* ChatTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTextView.swift; sourceTree = "<group>"; };
+		B9C562ED2BD8AB72001321DC /* ChatImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatImageView.swift; sourceTree = "<group>"; };
+		B9C562EE2BD8AB72001321DC /* ChatEmojiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatEmojiView.swift; sourceTree = "<group>"; };
+		B9C562EF2BD8AB72001321DC /* ChattingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingView.swift; sourceTree = "<group>"; };
+		B9C562F02BD8AB72001321DC /* TitleBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleBarView.swift; sourceTree = "<group>"; };
+		B9C562F22BD8AB72001321DC /* MyScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScrollView.swift; sourceTree = "<group>"; };
+		B9C562F32BD8AB72001321DC /* PreviewVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewVideoView.swift; sourceTree = "<group>"; };
+		B9C562F42BD8AB72001321DC /* PreviewImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewImageView.swift; sourceTree = "<group>"; };
+		B9C562F62BD8AB72001321DC /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B9C562F72BD8AB72001321DC /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B9C562F82BD8AB72001321DC /* TermView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermView.swift; sourceTree = "<group>"; };
+		B9C562FB2BD8AB72001321DC /* CustomButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
+		B9C562FD2BD8AB72001321DC /* ErrorPopupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorPopupModel.swift; sourceTree = "<group>"; };
+		B9C562FE2BD8AB72001321DC /* ChatResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatResultModel.swift; sourceTree = "<group>"; };
+		B9C563022BD8AB72001321DC /* MyChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyChannel.swift; sourceTree = "<group>"; };
+		B9C563032BD8AB72001321DC /* MockExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockExtension.swift; sourceTree = "<group>"; };
+		B9C563042BD8AB72001321DC /* AlbumPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumPicker.swift; sourceTree = "<group>"; };
+		B9C563052BD8AB72001321DC /* UtilExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilExtensions.swift; sourceTree = "<group>"; };
+		B9C563062BD8AB72001321DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9C563092BD8AB72001321DC /* ErrorPopupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorPopupViewModel.swift; sourceTree = "<group>"; };
+		B9C5630A2BD8AB72001321DC /* RouterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
+		B9C563502BD8DDB7001321DC /* ChatWhisperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWhisperView.swift; sourceTree = "<group>"; };
+		B9C563522BD8F4C5001321DC /* VChatCloud-iOSVideo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "VChatCloud-iOSVideo-Info.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9C562C32BD8AB30001321DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C5633C2BD8ACC9001321DC /* AlertToast in Frameworks */,
+				B9C563482BD8B24F001321DC /* YouTubePlayerKit in Frameworks */,
+				B96BEBD12BE35AA200E08222 /* VChatCloudSwiftSDK in Frameworks */,
+				B9C563392BD8ACAE001321DC /* CachedAsyncImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9C562BD2BD8AB30001321DC = {
+			isa = PBXGroup;
+			children = (
+				B9C562C82BD8AB30001321DC /* VChatCloud iOSVideo */,
+				B9C562C72BD8AB30001321DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9C562C72BD8AB30001321DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9C562C62BD8AB30001321DC /* VChatCloud Video.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9C562C82BD8AB30001321DC /* VChatCloud iOSVideo */ = {
+			isa = PBXGroup;
+			children = (
+				B9C563522BD8F4C5001321DC /* VChatCloud-iOSVideo-Info.plist */,
+				B9C563042BD8AB72001321DC /* AlbumPicker.swift */,
+				B9C562D72BD8AB72001321DC /* ContentView.swift */,
+				B9C562FB2BD8AB72001321DC /* CustomButtonStyle.swift */,
+				B9C563032BD8AB72001321DC /* MockExtension.swift */,
+				B9C563022BD8AB72001321DC /* MyChannel.swift */,
+				B9C563052BD8AB72001321DC /* UtilExtensions.swift */,
+				B9C562C92BD8AB30001321DC /* VChatCloud_iOSVideoApp.swift */,
+				B9C563062BD8AB72001321DC /* Assets.xcassets */,
+				B9C562FC2BD8AB72001321DC /* Model */,
+				B9C562CF2BD8AB31001321DC /* Preview Content */,
+				B9C562D82BD8AB72001321DC /* View */,
+				B9C563082BD8AB72001321DC /* ViewModel */,
+			);
+			path = "VChatCloud iOSVideo";
+			sourceTree = "<group>";
+		};
+		B9C562CF2BD8AB31001321DC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B9C562D02BD8AB31001321DC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B9C562D82BD8AB72001321DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9C562D92BD8AB72001321DC /* Loading */,
+				B9C562DB2BD8AB72001321DC /* Chat */,
+				B9C562F12BD8AB72001321DC /* Preview */,
+				B9C562F52BD8AB72001321DC /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9C562D92BD8AB72001321DC /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				B9C562DA2BD8AB72001321DC /* LoadingView.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		B9C562DB2BD8AB72001321DC /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				B9C562DC2BD8AB72001321DC /* JoinUserView.swift */,
+				B9C562DE2BD8AB72001321DC /* ChatOpenGraphView.swift */,
+				B9C562DF2BD8AB72001321DC /* ChatBodyView.swift */,
+				B9C562E02BD8AB72001321DC /* LeaveUserView.swift */,
+				B9C562E12BD8AB72001321DC /* UserListView.swift */,
+				B9C562E22BD8AB72001321DC /* TextFieldView.swift */,
+				B9C562E32BD8AB72001321DC /* ChatVideoView.swift */,
+				B9C562E42BD8AB72001321DC /* ChatFileView.swift */,
+				B9C562E52BD8AB72001321DC /* NoticeView.swift */,
+				B9C562E62BD8AB72001321DC /* FileDrawerView.swift */,
+				B9C562E72BD8AB72001321DC /* EmojiFieldView.swift */,
+				B9C562E82BD8AB72001321DC /* ChatHeaderView.swift */,
+				B9C562E92BD8AB72001321DC /* ChatBaseView.swift */,
+				B9C562EA2BD8AB72001321DC /* HelpDrawerView.swift */,
+				B9C562EB2BD8AB72001321DC /* LanguageToggleView.swift */,
+				B9C562EC2BD8AB72001321DC /* ChatTextView.swift */,
+				B9C562ED2BD8AB72001321DC /* ChatImageView.swift */,
+				B9C562EE2BD8AB72001321DC /* ChatEmojiView.swift */,
+				B9C562EF2BD8AB72001321DC /* ChattingView.swift */,
+				B9C562F02BD8AB72001321DC /* TitleBarView.swift */,
+				B9C563502BD8DDB7001321DC /* ChatWhisperView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		B9C562F12BD8AB72001321DC /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				B9C562F22BD8AB72001321DC /* MyScrollView.swift */,
+				B9C562F32BD8AB72001321DC /* PreviewVideoView.swift */,
+				B9C562F42BD8AB72001321DC /* PreviewImageView.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		B9C562F52BD8AB72001321DC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B9C562F62BD8AB72001321DC /* ProfileView.swift */,
+				B9C562F72BD8AB72001321DC /* LoginView.swift */,
+				B9C562F82BD8AB72001321DC /* TermView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B9C562FC2BD8AB72001321DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9C562FD2BD8AB72001321DC /* ErrorPopupModel.swift */,
+				B9C562FE2BD8AB72001321DC /* ChatResultModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9C563082BD8AB72001321DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B9C563092BD8AB72001321DC /* ErrorPopupViewModel.swift */,
+				B9C5630A2BD8AB72001321DC /* RouterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9C562C52BD8AB30001321DC /* VChatCloud Video */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9C562D42BD8AB31001321DC /* Build configuration list for PBXNativeTarget "VChatCloud Video" */;
+			buildPhases = (
+				B9C562C22BD8AB30001321DC /* Sources */,
+				B9C562C32BD8AB30001321DC /* Frameworks */,
+				B9C562C42BD8AB30001321DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VChatCloud Video";
+			packageProductDependencies = (
+				B9C563382BD8ACAE001321DC /* CachedAsyncImage */,
+				B9C5633B2BD8ACC9001321DC /* AlertToast */,
+				B9C563472BD8B24F001321DC /* YouTubePlayerKit */,
+				B96BEBD02BE35AA200E08222 /* VChatCloudSwiftSDK */,
+			);
+			productName = "VChatCloud iOSVideo";
+			productReference = B9C562C62BD8AB30001321DC /* VChatCloud Video.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9C562BE2BD8AB30001321DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B9C562C52BD8AB30001321DC = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = B9C562C12BD8AB30001321DC /* Build configuration list for PBXProject "VChatCloud Video" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9C562BD2BD8AB30001321DC;
+			packageReferences = (
+				B9C563372BD8ACAE001321DC /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+				B9C5633A2BD8ACC9001321DC /* XCRemoteSwiftPackageReference "AlertToast" */,
+				B9C563462BD8B24F001321DC /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
+				B96BEBCF2BE35AA200E08222 /* XCRemoteSwiftPackageReference "VChatCloud-Swift-SDK" */,
+			);
+			productRefGroup = B9C562C72BD8AB30001321DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9C562C52BD8AB30001321DC /* VChatCloud Video */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9C562C42BD8AB30001321DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C563302BD8AB72001321DC /* Assets.xcassets in Resources */,
+				B9C562D12BD8AB31001321DC /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9C562C22BD8AB30001321DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C563162BD8AB72001321DC /* NoticeView.swift in Sources */,
+				B9C563262BD8AB72001321DC /* LoginView.swift in Sources */,
+				B9C563272BD8AB72001321DC /* TermView.swift in Sources */,
+				B9C5632B2BD8AB72001321DC /* ChatResultModel.swift in Sources */,
+				B9C563232BD8AB72001321DC /* PreviewVideoView.swift in Sources */,
+				B9C5632F2BD8AB72001321DC /* UtilExtensions.swift in Sources */,
+				B9C5631D2BD8AB72001321DC /* ChatTextView.swift in Sources */,
+				B9C5630B2BD8AB72001321DC /* ContentView.swift in Sources */,
+				B9C563182BD8AB72001321DC /* EmojiFieldView.swift in Sources */,
+				B9C563192BD8AB72001321DC /* ChatHeaderView.swift in Sources */,
+				B9C5631B2BD8AB72001321DC /* HelpDrawerView.swift in Sources */,
+				B9C563122BD8AB72001321DC /* UserListView.swift in Sources */,
+				B9C563212BD8AB72001321DC /* TitleBarView.swift in Sources */,
+				B9C562CA2BD8AB30001321DC /* VChatCloud_iOSVideoApp.swift in Sources */,
+				B9C5631C2BD8AB72001321DC /* LanguageToggleView.swift in Sources */,
+				B9C5630C2BD8AB72001321DC /* LoadingView.swift in Sources */,
+				B9C5632C2BD8AB72001321DC /* MyChannel.swift in Sources */,
+				B9C563252BD8AB72001321DC /* ProfileView.swift in Sources */,
+				B9C563102BD8AB72001321DC /* ChatBodyView.swift in Sources */,
+				B9C563202BD8AB72001321DC /* ChattingView.swift in Sources */,
+				B9C563142BD8AB72001321DC /* ChatVideoView.swift in Sources */,
+				B9C563332BD8AB72001321DC /* RouterViewModel.swift in Sources */,
+				B9C563242BD8AB72001321DC /* PreviewImageView.swift in Sources */,
+				B9C563292BD8AB72001321DC /* CustomButtonStyle.swift in Sources */,
+				B9C563222BD8AB72001321DC /* MyScrollView.swift in Sources */,
+				B9C5631F2BD8AB72001321DC /* ChatEmojiView.swift in Sources */,
+				B9C563132BD8AB72001321DC /* TextFieldView.swift in Sources */,
+				B9C563152BD8AB72001321DC /* ChatFileView.swift in Sources */,
+				B9C5631A2BD8AB72001321DC /* ChatBaseView.swift in Sources */,
+				B9C563112BD8AB72001321DC /* LeaveUserView.swift in Sources */,
+				B9C5632D2BD8AB72001321DC /* MockExtension.swift in Sources */,
+				B9C563512BD8DDB7001321DC /* ChatWhisperView.swift in Sources */,
+				B9C563172BD8AB72001321DC /* FileDrawerView.swift in Sources */,
+				B9C5632E2BD8AB72001321DC /* AlbumPicker.swift in Sources */,
+				B9C563322BD8AB72001321DC /* ErrorPopupViewModel.swift in Sources */,
+				B9C5631E2BD8AB72001321DC /* ChatImageView.swift in Sources */,
+				B9C5630D2BD8AB72001321DC /* JoinUserView.swift in Sources */,
+				B9C5630F2BD8AB72001321DC /* ChatOpenGraphView.swift in Sources */,
+				B9C5632A2BD8AB72001321DC /* ErrorPopupModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B9C562D22BD8AB31001321DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B9C562D32BD8AB31001321DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9C562D52BD8AB31001321DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VChatCloud iOSVideo/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VChatCloud-iOSVideo-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VChatCloud Video";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "To send the file to the server and share it in the chat room";
+				INFOPLIST_KEY_NSFileProviderPresenceUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To send pictures to the server and share them in the chat room";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vchatcloud.ios.VChatCloud-iOSVideo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9C562D62BD8AB31001321DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VChatCloud iOSVideo/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VChatCloud-iOSVideo-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "VChatCloud Video";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "To send the file to the server and share it in the chat room";
+				INFOPLIST_KEY_NSFileProviderPresenceUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To send pictures to the server and share them in the chat room";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vchatcloud.ios.VChatCloud-iOSVideo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9C562C12BD8AB30001321DC /* Build configuration list for PBXProject "VChatCloud Video" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9C562D22BD8AB31001321DC /* Debug */,
+				B9C562D32BD8AB31001321DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9C562D42BD8AB31001321DC /* Build configuration list for PBXNativeTarget "VChatCloud Video" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9C562D52BD8AB31001321DC /* Debug */,
+				B9C562D62BD8AB31001321DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B96BEBCF2BE35AA200E08222 /* XCRemoteSwiftPackageReference "VChatCloud-Swift-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/e7works-git/VChatCloud-Swift-SDK.git";
+			requirement = {
+				kind = revision;
+				revision = e4c441809cbb49537a7df10c0d0cfb78229abbb3;
+			};
+		};
+		B9C563372BD8ACAE001321DC /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		B9C5633A2BD8ACC9001321DC /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B9C563462BD8B24F001321DC /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B96BEBD02BE35AA200E08222 /* VChatCloudSwiftSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B96BEBCF2BE35AA200E08222 /* XCRemoteSwiftPackageReference "VChatCloud-Swift-SDK" */;
+			productName = VChatCloudSwiftSDK;
+		};
+		B9C563382BD8ACAE001321DC /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9C563372BD8ACAE001321DC /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+		B9C5633B2BD8ACC9001321DC /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9C5633A2BD8ACC9001321DC /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+		B9C563472BD8B24F001321DC /* YouTubePlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9C563462BD8B24F001321DC /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
+			productName = YouTubePlayerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B9C562BE2BD8AB30001321DC /* Project object */;
+}

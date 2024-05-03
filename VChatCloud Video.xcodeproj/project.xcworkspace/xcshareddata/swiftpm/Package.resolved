@@ -1,0 +1,41 @@
+{
+  "originHash" : "5529e6165bf3ec711f2095b01a89f389d74292aa8381bfcfaf4789f35193e6f5",
+  "pins" : [
+    {
+      "identity" : "alerttoast",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elai950/AlertToast.git",
+      "state" : {
+        "revision" : "b39252eacd159904afd7d718bba0afabb87f2f2f",
+        "version" : "1.3.9"
+      }
+    },
+    {
+      "identity" : "swiftui-cached-async-image",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lorenzofiamingo/swiftui-cached-async-image",
+      "state" : {
+        "revision" : "467a3d17479887943ab917a379e62bbaff60ac8a",
+        "version" : "2.1.1"
+      }
+    },
+    {
+      "identity" : "vchatcloud-swift-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/e7works-git/VChatCloud-Swift-SDK.git",
+      "state" : {
+        "revision" : "e4c441809cbb49537a7df10c0d0cfb78229abbb3"
+      }
+    },
+    {
+      "identity" : "youtubeplayerkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SvenTiigi/YouTubePlayerKit.git",
+      "state" : {
+        "revision" : "fe26e1c3f24e227547f8de5abde86c36ae105b6a",
+        "version" : "1.6.0"
+      }
+    }
+  ],
+  "version" : 3
+}
