@@ -13,9 +13,12 @@ struct LoginView: View {
     @AppStorage("profileIndex") var profileIndex: Int = 1
     @AppStorage("termAgree") var termAgree: Bool = false
     @AppStorage("clientKey") var clientKey: String = ""
+    @AppStorage("channelKey") var channelKey: String = "Input ChannelKey"
     @State var showTerm: Bool = false
     @State var logining: Bool = false
-    @State var isFocused: Bool = false
+    @State var isChannelKeyFocused: Bool = false
+    @State var isNicknameFocused: Bool = false
+    @FocusState var focusState: Bool
 
     @StateObject var routerViewModel: RouterViewModel = RouterViewModel()
     @StateObject var userViewModel: UserViewModel = UserViewModel.EMPTY
@@ -42,8 +45,6 @@ struct LoginView: View {
             } else if !termAgree {
                 throw LoginError.termAgree
             }
-
-            let channelKey = "CHANNEL_KEY"
 
             clientKey = clientKey.isEmpty ? randomString(length: 10) : clientKey
             
@@ -117,8 +118,34 @@ struct LoginView: View {
                         ZStack {
                             VStack(spacing: 0) {
                                 Spacer()
+                                HStack(spacing: 0) {
+                                    TextField("Channel Key를 입력하세요.", text: $channelKey, onEditingChanged: { isChannelKeyFocused = $0 })
+                                        .focused($focusState)
+                                        .textFieldStyle(.plain)
+                                        .font(.system(size: 14))
+                                        .foregroundColor(Color(hex: 0xaaaaaa))
+                                        .padding(.leading, 5)
+                                        .frame(width: 215)
+                                    Button(
+                                        action: {
+                                            channelKey = "Input ChannelKey"
+                                        },
+                                        label: {
+                                            Image(systemName: "arrow.clockwise.circle")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 15)
+                                                .foregroundColor(.gray)
+                                        })
+                                }
+                                Rectangle()
+                                    .fill(isChannelKeyFocused ? Color.cyan : Color.gray)
+                                    .frame(width: 230, height: 2)
+                                    .padding(.top, 5)
+                                    .padding(.bottom, 10)
                                 // Nickname Input
-                                TextField("사용자님의 이름을 입력하세요", text: $nickname, onEditingChanged: { isFocused = $0 })
+                                TextField("사용자님의 이름을 입력하세요", text: $nickname, onEditingChanged: { isNicknameFocused = $0 })
+                                    .focused($focusState)
                                     .textFieldStyle(.plain)
                                     .font(.system(size: 14))
                                     .foregroundColor(Color(hex: 0xaaaaaa))
@@ -126,7 +153,7 @@ struct LoginView: View {
                                     .frame(width: 230)
                                     .onReceive(Just(nickname)) { _ in limitText(nicknameMaxLength) }
                                 Rectangle()
-                                    .fill(isFocused ? Color.cyan : Color.gray)
+                                    .fill(isNicknameFocused ? Color.cyan : Color.gray)
                                     .frame(width: 230, height: 2)
                                     .padding(.top, 5)
                                 // Term Agree Check
@@ -188,11 +215,11 @@ struct LoginView: View {
                                 .padding(.top, 25)
                                 .padding(.bottom, 20)
                             }
-                            .frame(width: 280, height: 230)
+                            .frame(width: 280, height: 260)
                             .background(Color(hex: 0xffffff))
                             .cornerRadius(15)
                             ProfileView(index: $profileIndex)
-                                .padding(.bottom, 230)
+                                .padding(.bottom, 260)
                         }
                     }
                     // Footer
@@ -210,6 +237,9 @@ struct LoginView: View {
             .navigationDestination(isPresented: $routerViewModel.isChatView, destination: {
                 ChattingView(routerViewModel: routerViewModel, chatroomViewModel: chatroomViewModel, userViewModel: userViewModel)
             })
+            .onTapGesture {
+                focusState = false
+            }
         }
     }
 }

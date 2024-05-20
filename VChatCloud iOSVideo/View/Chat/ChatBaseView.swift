@@ -5,6 +5,8 @@ struct ChatBaseView<Content>: View where Content: View {
     private enum AlertType {
         case whisper
         case hide
+        case block
+        case blockDone
         case report
         case reportDone
     }
@@ -53,6 +55,10 @@ struct ChatBaseView<Content>: View where Content: View {
             return "\(chatResultModel.nickname)님에게 귓속말"
         case .hide:
             return "채팅 내용을 가리시겠습니까?"
+        case .block:
+            return "해당 유저를 차단하시겠습니까?"
+        case .blockDone:
+            return "차단 되었습니다."
         case .report:
             return "해당 유저를 신고하시겠습니까?"
         case .reportDone:
@@ -85,7 +91,15 @@ struct ChatBaseView<Content>: View where Content: View {
             }
         }
     }
-    
+
+    func block(clientKey: String) {
+        MyChannel.shared.blockedUser.append(clientKey)
+        DispatchQueue.main.async {
+            alertType = .blockDone
+            isShowAlert.toggle()
+        }
+    }
+
     var body: some View {
         HStack(alignment: .top, spacing: 8) {
             if chatResultModel.address == .whisper {
@@ -129,18 +143,22 @@ struct ChatBaseView<Content>: View where Content: View {
         }
         .contentShape(Rectangle())
         .contextMenu(menuItems: {
-            if !chatResultModel.isMe {
-                if chatResultModel.mimeType == .text {
-                    Button("복사") {
-                        UIPasteboard.general.string = chatResultModel.message
-                    }
+            if chatResultModel.mimeType == .text {
+                Button("복사") {
+                    UIPasteboard.general.string = chatResultModel.message
                 }
+            }
+            if !chatResultModel.isMe {
                 Button("\(chatResultModel.nickname)님에게 귓속말") {
                     alertType = .whisper
                     isShowAlert.toggle()
                 }
                 Button("가리기") {
                     alertType = .hide
+                    isShowAlert.toggle()
+                }
+                Button("차단하기") {
+                    alertType = .block
                     isShowAlert.toggle()
                 }
                 Button("신고하기") {
@@ -163,6 +181,13 @@ struct ChatBaseView<Content>: View where Content: View {
                 Button("가리기") {
                     hide()
                 }
+            case .block:
+                Button("취소", role: .cancel) {}
+                Button("차단하기") {
+                    block(clientKey: chatResultModel.clientKey)
+                }
+            case .blockDone:
+                Button("확인", role: .cancel) {}
             case .report:
                 Button("취소", role: .cancel) {}
                 Button("신고하기") {
@@ -177,6 +202,10 @@ struct ChatBaseView<Content>: View where Content: View {
                 Text("")
             case .hide:
                 Text("해당 내용은 현재 기기에서만 가려집니다.")
+            case .block:
+                Text("차단하면 재접속까지 해당 사용자의 채팅이 보이지 않게 됩니다.")
+            case .blockDone:
+                Text("")
             case .report:
                 Text("신고 후 검토까지는 최대 24시간이 소요됩니다.\nVChatCloud 운영정책에 따라 강퇴될 수 있음을 알립니다.")
             case .reportDone:

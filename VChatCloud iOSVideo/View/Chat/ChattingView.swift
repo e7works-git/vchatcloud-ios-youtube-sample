@@ -19,7 +19,7 @@ struct ChattingView: View {
     @State var keyboardHeight = 0.0
 
     @StateObject
-    var youTubePlayer: YouTubePlayer = YouTubePlayer(source: .url("https://www.youtube.com/watch?v=3A81Xx6l-YI"), configuration: .init(autoPlay: true, loopEnabled: true))
+    var youTubePlayer: YouTubePlayer = YouTubePlayer(source: .url("https://www.youtube.com/watch?v=YfD-gJmH2u8"), configuration: .init(autoPlay: true, loopEnabled: true))
     @FocusState var focusField: String?
     
     func hideAll() {
@@ -42,7 +42,8 @@ struct ChattingView: View {
                             ProgressView()
                         case .ready:
                             EmptyView()
-                        case .error(_):
+                        case .error(let err):
+                            Text(err.localizedDescription)
                             Text(verbatim: "YouTube player couldn't be loaded")
                         }
                     }
